@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Miage.com</title>
+</head>
+<body>  
+    <nav class="navbar">
+        <div class="logo">
+            <h1>MIAGE </h1>
+        </div>
+        <div class="nav_list">
+            <ul>
+                <li><a href="#acceuil" onclick="showSection('acceuil')">acceuil</a></li>
+                <li><a href="#sgbd" onclick="showSection('sgbd')">sgbd</a></li>
+                <li><a href="#web" onclick="showSection('web')">web</a></li>
+                <li><a href="#o-objet" onclick="showSection('o-objet')">o.objet</a></li>
+                <li><a href="#client/serveur" onclick="showSection('client/serveur')">client/serveur</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="main" id="acceuil">
+        <div>
+            <h3>bienvenue sur miage</h3>
+            <div class="slide_container">
+                <marquee>Les inscription de l'ecole miage est ouverte l'année scolaire 2025/2026</marquee>
+            </div> 
+            <div class="main_btn">
+                <a href="login.html" class="login_btn" onclick="login()">login</a>
+                <a href="login.html" class="register_btn" onclick="register()">register</a>
+            </div>
+            <div class="numbers">
+                <div class="number">
+                    <h2>+1500</h2>
+                    <p>etudiants</p>
+                </div>
+                <div class="number">
+                    <h2>+500</h2>
+                    <p>professeurs</p>
+                </div>
+                <div class="number">
+                    <h2>+1000</h2>
+                    <p>établissements</p>
+                </div>
+                <div class="number">
+                    <h2>+120</h2>
+                    <p>écoles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="latest_news">
+        <div class="card">
+            <div class="late_news">
+                <div class="heading_sect">
+                    <h3>Dernières nouvelles</h3>
+                </div>
+                <div class="list_news">
+                    <marquee class="mrq" behavior="" direction="up" scrollamount="5">
+                        <ul class="latest_news_ul">
+                            <il><span>21-10-2024</span> le cours de html avec Mr.Bennich Abdelghani est telechager dans le sit. <img src="images/News.gif" alt=""></il>
+                            <il><span>21-10-2024</span> le cours de css avec Mr.Bennich Abdelghani est telechager dans le sit. <img src="images/News.gif" alt=""></il>
+                            <il><span>21-10-2024</span> le cours de javascript avec Mr.Bennich Abdelghani est telechager dans le sit. <img src="images/News.gif" alt=""></il>
+                            <il><span>21-10-2024</span> le cours de php avec Mr.Es-sofi Redouane est telechager dans le sit. <img src="images/News.gif" alt=""></il>
+                            <il><span>21-10-2024</span> le cours de mysql avec Mr.Bennich Abdelghani est telechager dans le sit. <img src="images/News.gif" alt=""></il>
+                            <il><span>21-10-2024</span> le cours de Sass avec Mr.Rahjbal est telechager dans le sit. <img src="images/News.gif" alt=""></il>
+                            <il><span>21-10-2024</span> le cours de boostrap avec Mr.imad est telechager dans le sit. <img src="images/News.gif" alt=""></il>
+                            <il><span>21-10-2024</span> le cours de jquery avec Mr.Bennich Abdelghani est telechager dans le sit. <img src="images/News.gif" alt=""></il>
+                        </ul>
+                    </marquee>
+                    <div class="click">
+                        <a href="desgin/home.html">click me<i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="late_news">
+                <div class="heading_sect">
+                    <h3>Notre Diplome</h3>
+                </div>
+                <div class="list_news">
+                    <img class="diplome" src="images/diplome.miage.jpeg" alt="" srcset="">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="late_news">
+                <div class="heading_sect">
+                    <h3>Notre Master</h3>
+                </div>
+                <div class="list_news">
+                    <img class="diplome" src="images/diplome.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about_sgbd" id="sgbd">
+        <div class="sgbd_title"> 
+            <h1>Introduction aux Systèmes de Gestion de Base de Données (SGBD)</h1> 
+        </div>
+        <div class="sgbd_container"> 
+            <div class="sgbd_semi_title">
+                <h2>Qu'est-ce qu'un SGBD ?</h2> 
+            </div>
+            <div class="sgbd_paragraph">
+                <p>Un Système de Gestion de Base de Données (SGBD) est un logiciel qui permet aux utilisateurs de définir, créer, gérer et contrôler l'accès aux bases de données. Il joue un rôle crucial dans la gestion des données et assure l'intégrité, la confidentialité et la sécurité des informations.</p> 
+            </div>
+            <div class="sgbd_semi_title">
+                <h2>Fonctionnalités principales</h2> 
+            </div>
+            <div class="sgbd_paragraph">
+                <p>Les principales fonctionnalités d'un SGBD incluent :</p>
+            </div>
+            <div class="sgbd_list">
+                <ul> 
+                    <li>La création et la modification de la structure des bases de données.</li>
+                    <li>La gestion des utilisateurs et des permissions d'accès.</li> 
+                    <li>La manipulation des données (ajout, suppression, mise à jour).</li> 
+                    <li>La sauvegarde et la restauration des données.</li> 
+                    <li>La génération de rapports et de requêtes pour l'analyse des données.</li> 
+                </ul> 
+            </div>
+        </div>
+        <div class="sgbd_image">
+            <img src="images/Database.webp" alt="" srcset="">
+        </div>
+    </section>
+    <section class="about_web" id="web">
+        <div class="web_title">
+            <h1>Qu'est-ce que le Web ?</h1>
+        </div>
+        <div class="web_paragraph">
+            <p>
+                Le Web est utilisé pour :
+                Partager de l'information : Qu'il s'agisse de blogs, de nouvelles, de recherches académiques ou de réseaux sociaux, le Web permet de diffuser l'information à une échelle mondiale.
+                Commerce en ligne : Les plateformes de commerce électronique comme Amazon et eBay permettent d'acheter et de vendre des produits et services.
+                Communication : Les courriels, les forums, les réseaux sociaux et les messageries instantanées facilitent la communication entre les individus, peu importe leur localisation.
+                Éducation : Les cours en ligne, les tutoriels, et les ressources éducatives rendent l'apprentissage accessible à tous.
+                Divertissement : Streaming de vidéos, jeux en ligne, musique, et bien plus encore sont disponibles sur le Web.
+            </p>
+        </div>
+        <div class="web_semi_title">
+            <h2>À quoi sert le Web ?</h2>
+            <div class="web_paragraph">
+                <p>Le Web est utilisé pour :</p>
+            </div>
+        </div>
+        <div class="web_list">
+            <ul>
+                <li>lPartager de l'information : Qu'il s'agisse de blogs, de nouvelles, de recherches académiques ou de réseaux sociaux, le Web permet de diffuser l'information à une échelle mondiale.</li>
+                <li>commerce en ligne : Les plateformes de commerce électronique comme Amazon et eBay permettent d'acheter et de vendre des produits et services.</li>
+                <li>Communication : Les courriels, les forums, les réseaux sociaux et les messageries instantanées facilitent la communication entre les individus, peu importe leur localisation.</li>
+                <li>Éducation : Les cours en ligne, les tutoriels, et les ressources éducatives rendent l'apprentissage accessible à tous.</li>
+                <li>Divertissement : Streaming de vidéos, jeux en ligne, musique, et bien plus encore sont disponibles sur le Web.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="about_o_objet" id="o-objet">
+        <div class="objet_image">
+            <img src="images/rb_66490.png" alt="" srcset="">
+        </div>
+        <div class="objet_container">
+            <div class="objet_title">
+                <h2>Qu'est-ce que la programmation orientée objet ?</h2>
+            </div>
+            <div class="objet_content">
+                <p>La programmation orientée objet, ou POO, est un modèle de programmation qui repose sur le concept de classes et d'objets. Elle est utilisée pour structurer un programme logiciel en éléments de code simples et réutilisables, généralement appelés classes, qui sont utilisés pour créer des instances individuelles d'objets. Il existe de nombreux langages de programmation orientés objet, notamment JavaScript, C++, Java et Python
+                    Par exemple, Python, qui est un langage de programmation polyvalent populaire, permet de coder en utilisant des techniques procédurales, orientées objet ou fonctionnelles. Java, un autre langage populaire, est exclusivement orienté objet.
+                </p>
+            </div>
+            <div class="objet_title">
+                <h2>Quel est l'objectif de la programmation orientée objet ?</h2>
+            </div>
+            <div class="objet_content">
+                <p>
+                    La programmation orientée objet vise à mettre en œuvre des entités du monde réel comme l'héritage, le masquage ou encore le polymorphisme en programmation. L'objectif principal de la POO est de lier ensemble les données et les fonctions qui opèrent sur elles afin qu'aucune autre partie du code ne puisse accéder à ces données, sauf cette fonction.
+                    De plus, l'objectif de la programmation orientée objet est de produire un code réutilisable bien conçu.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="shape_devider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="#000"><path d="M500 80.7C358 68 0 4 0 4V0h1000v84.7c-216 23.3-358 8.6-500-4Z" opacity=".3"></path><path d="M500 65.7C358 53 0 4 0 4V0h1000v62.7c-216 23.3-358 15.6-500 3Z" opacity=".5"></path><path d="M500 50.7C358 38 0 4 0 4V0h1000v40.7C784 64 642 63.3 500 50.7Z"></path></svg>
+    </div>
+    <section class="client_serveur" id="client/serveur">
+        <div class="client_serveur_container">
+            <div class="client_serveur_semi_title">
+                <h1>Qu’est-ce que l’architecture client-serveur ?</h1>
+            </div>
+            <div class="client_serveur_paragraph">
+                <p>
+                    L’architecture client-serveur est un modèle informatique dans lequel le serveur héberge, fournit et gère la plupart des ressources et des services destinés au client. Cette architecture est souvent utilisée dans les applications qui impliquent des cycles fréquents de requête-réponse, où le serveur est chargé de traiter les informations et de les fournir aux clients.
+                </p>
+            </div>
+            <div class="client_serveur_semi_title">
+                <h2>Comment fonctionne-t-elle?</h2>
+            </div>
+            <div class="client_serveur_paragraph">
+                <p>
+                    Dans le modèle client-serveur, le client envoie une requête au serveur par l’intermédiaire d’un réseau, qui est ensuite traitée par le serveur. Une fois que ce dernier a terminé de traiter la demande, il envoie une réponse au client. Cette interaction est souvent facilitée par un protocole de réseau, le serveur et le client communiquant par le biais d’un ensemble bien défini de règles et de formats.
+                </p>
+            </div>
+            <div class="client_serveur_semi_title">
+                <h2>Exemples d’architectures client-serveur</h2>
+            </div>
+            <div class="client_serveur_paragraph">
+                <p>L’architecture client-serveur est omniprésente dans le monde numérique. Par exemple, les services de messagerie électronique tels que Gmail fonctionnent sur ce modèle, le serveur de messagerie hébergeant et gérant les courriels tandis que le client (votre ordinateur ou votre smartphone) y accède. De même, la navigation sur le web utilise cette architecture, le serveur web hébergeant les sites et le navigateur jouant le rôle de client, demandant et recevant les pages web.</p>
+            </div>
+            <div class="conclusion">
+                <div class="conclusion_title">
+                    <h2>Conclusion</h2>
+                </div>
+                <div class="conclusion_paragraph">
+                    <p>Dans le réseau complexe des interactions numériques, l’architecture client-serveur joue un rôle essentiel. Ses avantages, tels que la centralisation, l’évolutivité et l’efficacité, en font un composant essentiel dans diverses applications. Cependant, comme tout système, elle présente quelques inconvénients, tels que la dépendance au serveur et les risques potentiels en matière de sécurité.</p>
+                </div>
+            </div>
+        </div>
+            <div class="client_serveur_image">
+                <img src="images/server.jpg" alt="">
+            </div>
+    </section>
+
+     <!-------PLACEMENT SECTION ------->
+  <div class="main-section">
+    <div class="container">
+      <h4 class="subhead">Top Placement</h4>
+      <h2 class="heading">Our Partner Company</h2>
+      <marquee class="placement" direction="left" scrollamount="10">
+        <img src="images/cisco.jpg">
+        <img src="images/fede.jpeg" alt="">
+        <img src="images/microsoft.jpg" alt="">
+        <img src="images/supmti.png" alt="">
+        <img src="images/universite-de-versailles-saint-quentin.webp">
+        <!-----------duplicate images for continuous scroll------------->
+        <img src="images/cisco.jpg">
+        <img src="images/fede.jpeg" alt="">
+        <img src="images/microsoft.jpg" alt="">
+        <img src="images/supmti.png" alt="">
+        <img src="images/universite-de-versailles-saint-quentin.webp">
+      </marquee>
+    </div>
+  </div>
+    <section class="contact" id="contact">
+        <div class="contact_info">
+            <a href="">Télé : +212 6 93 10 92 20</a>
+            <a href="">Télé : +212 7 74 00 17 95</a>
+            <a href="">Email: aitmehaissmohamed@gmail.com</a>
+            <a href="">Email: nakraouiothman@gmail.com</a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_content">
+            <div class="footer_logo">
+                <img src="images/miage.png" alt="">
+            </div>
+            <div class="footer_links">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#o-objet">Objectif de la programmation orientée objet</a></li>
+                    <li><a href="#client/serveur">Client/Serveur</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer_social_media">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 MIAGE - Tous droits réservés</p>
+            </div>
+            <div class="language_switcher">
+                <select>
+                    <option value="fr">Français</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
